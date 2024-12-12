@@ -7,12 +7,71 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Test Page</h1>
-    <p>This is a simple test page to demonstrate GitHub workflow.</p>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <section>
-            <h2>About</h2>
-            <p>This page will be updated with more content soon!</p>
+        <section id="home">
+            <h1>Welcome to My Test Page</h1>
+            <p>This is a simple test page to demonstrate GitHub workflow.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <h3>Joe Björnsson</h3>
+                    <p>Our lead architect, Joe spent 15 years designing microservices before discovering his true passion: making websites that load faster than you can blink. When not optimizing load times, he can be found perfecting his grandmother's meatball recipe in Stockholm.</p>
+                </div>
+                
+                <div class="team-member">
+                    <h3>Chuck Park-Song</h3>
+                    <p>A former competitive gamer turned full-stack developer, Chuck brings the same intensity to debugging that he once brought to StarCraft tournaments. He specializes in building scalable applications and maintains our company's legendary coffee machine.</p>
+                </div>
+                
+                <div class="team-member">
+                    <h3>Nimalarathna Wickramaarachchi Gunawardena</h3>
+                    <p>Our UX wizard, whom we affectionately call "Nim," has an uncanny ability to predict user behavior before users know what they want. When not crafting intuitive interfaces, she's writing a cookbook that combines Sri Lankan and French cuisine.</p>
+                </div>
+                
+                <div class="team-member">
+                    <h3>Manuel Oliveira</h3>
+                    <p>The team's backend specialist and resident football enthusiast, Manuel can optimize a database query almost as well as he can predict World Cup outcomes. Originally from Porto, he now divides his time between coding and teaching his cat to fetch.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Responsive Design</h3>
+                    <p>Works great on all devices</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Modern Layout</h3>
+                    <p>Clean and organized content structure</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Easy Navigation</h3>
+                    <p>Smooth scrolling between sections</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch with us for more information:</p>
+            <div class="contact-info">
+                <p>Email: example@example.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
         </section>
     </div>
 </body>
