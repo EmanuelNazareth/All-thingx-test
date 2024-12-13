@@ -11,6 +11,7 @@ body {
     padding: 1rem;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .navigation ul {
@@ -102,6 +103,71 @@ section {
     margin-top: 1rem;
 }
 
+/* Blog Styles */
+.blog-post {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.post-meta {
+    margin-bottom: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.post-date {
+    font-weight: bold;
+}
+
+.blog-post h3 {
+    color: #333;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+
+.blog-post h4 {
+    color: #444;
+    margin: 2rem 0 1rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.post-section {
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+.post-section p {
+    margin: 1rem 0;
+}
+
+.post-references {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #eee;
+}
+
+.post-references ol {
+    padding-left: 1.5rem;
+}
+
+.post-references li {
+    margin: 0.5rem 0;
+}
+
+.post-references a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.post-references a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 600px) {
     .navigation ul {
         flex-direction: column;
@@ -112,5 +178,13 @@ section {
     .container {
         margin: 1rem;
         padding: 1rem;
+    }
+
+    .blog-post {
+        padding: 1rem;
+    }
+
+    .post-section {
+        padding: 0;
     }
 }
