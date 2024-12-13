@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to All-thingx</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 <body>
     <nav class="navigation">
@@ -68,6 +71,40 @@
 
         <section id="blog">
             <h2>Blog</h2>
+            <!-- New Blog Post -->
+            <div class="blog-post">
+                <div class="post-meta">
+                    <span class="post-date">December 13, 2024</span>
+                </div>
+                <h3>Interactive Workout Visualization Demo</h3>
+                
+                <div class="post-content">
+                    <p>Today, I'm excited to share a demonstration of how we can create interactive visualizations using Altair/Vega-Lite for exercise data analysis. This visualization showcases a fictional dataset tracking both running distances and strength training over time.</p>
+                    
+                    <p>The visualization below combines two key metrics: daily running distance (in kilometers) and strength training sets. What makes this particularly interesting is the inclusion of rolling 30-day averages (shown in green) and overall averages (shown as red dashed lines), giving us insight into both short-term patterns and long-term trends.</p>
+                    
+                    <p>Try hovering over the data points to see detailed information for each workout session!</p>
+                    
+                    <div id="vis"></div>
+                    
+                    <script>
+                        // Load and embed the visualization
+                        vegaEmbed('#vis', 'workout_viz.json');
+                    </script>
+                    
+                    <h4>Visualization Features</h4>
+                    <div class="post-section">
+                        <p><strong>Interactive Elements:</strong> The visualization includes interactive tooltips showing detailed metrics for each data point, allowing you to explore the data in depth.</p>
+                        <p><strong>Multi-layer Design:</strong> The visualization combines points, lines, and reference lines to provide a comprehensive view of workout patterns and trends.</p>
+                        <p><strong>Automated Formatting:</strong> With automatic date formatting and axis scaling, the visualization maintains clarity across different time ranges.</p>
+                        <p><strong>Responsive Layout:</strong> The design adapts to different screen sizes, ensuring a good viewing experience across devices.</p>
+                    </div>
+
+                    <p>While the data shown here is fictional, it represents a realistic pattern of workout consistency and variation that you might see in actual fitness tracking data. The visualization makes it easy to spot trends, identify patterns in workout frequency, and track progress over time.</p>
+                </div>
+            </div>
+
+            <!-- Previous Blog Post -->
             <div class="blog-post">
                 <div class="post-meta">
                     <span class="post-date">December 12, 2024</span>
