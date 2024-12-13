@@ -5,29 +5,29 @@ date: 2024-12-13
 categories: visualization
 ---
 
-<p>Today, I'm excited to share a demonstration of how we can create interactive visualizations using Altair/Vega-Lite for exercise data analysis. This visualization showcases a fictional dataset tracking both running distances and strength training over time.</p>
+&lt;p&gt;Today, I'm excited to share a demonstration of how we can create interactive visualizations using Altair/Vega-Lite for exercise data analysis. This visualization showcases a fictional dataset tracking both running distances and strength training over time.&lt;/p&gt;
 
-<p>The visualization below combines two key metrics: daily running distance (in kilometers) and strength training sets. What makes this particularly interesting is the inclusion of rolling 30-day averages (shown in green) and overall averages (shown as red dashed lines), giving us insight into both short-term patterns and long-term trends.</p>
+&lt;p&gt;The visualization below combines two key metrics: daily running distance (in kilometers) and strength training sets. What makes this particularly interesting is the inclusion of rolling 30-day averages (shown in green) and overall averages (shown as red dashed lines), giving us insight into both short-term patterns and long-term trends.&lt;/p&gt;
 
-<p>Try hovering over the data points to see detailed information for each workout session!</p>
+&lt;p&gt;Try hovering over the data points to see detailed information for each workout session!&lt;/p&gt;
 
-<div id="vis"></div>
+&lt;div id="vis"&gt;&lt;/div&gt;
 
-<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+&lt;script src="https://cdn.jsdelivr.net/npm/vega@5"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/vega-lite@5"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/vega-embed@6"&gt;&lt;/script&gt;
 
-<script>
+&lt;script&gt;
   // Load and embed the visualization
   vegaEmbed('#vis', '/workout_viz.json');
-</script>
+&lt;/script&gt;
 
-<p>This visualization demonstrates several powerful features of Vega-Lite:</p>
-<ul>
-  <li>Interactive tooltips showing detailed metrics for each data point</li>
-  <li>Multi-layer visualization combining points, lines, and reference lines</li>
-  <li>Automatic date formatting and axis scaling</li>
-  <li>Responsive design that works across different screen sizes</li>
-</ul>
+&lt;p&gt;This visualization demonstrates several powerful features of Vega-Lite:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Interactive tooltips showing detailed metrics for each data point&lt;/li&gt;
+  &lt;li&gt;Multi-layer visualization combining points, lines, and reference lines&lt;/li&gt;
+  &lt;li&gt;Automatic date formatting and axis scaling&lt;/li&gt;
+  &lt;li&gt;Responsive design that works across different screen sizes&lt;/li&gt;
+&lt;/ul&gt;
 
-<p>The data shown here is fictional but represents a realistic pattern of workout consistency and variation that you might see in actual fitness tracking data. The visualization makes it easy to spot trends, identify patterns in workout frequency, and track progress over time.</p>
+&lt;p&gt;The data shown here is fictional but represents a realistic pattern of workout consistency and variation that you might see in actual fitness tracking data. The visualization makes it easy to spot trends, identify patterns in workout frequency, and track progress over time.&lt;/p&gt;
